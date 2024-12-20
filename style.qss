@@ -1,0 +1,157 @@
+/* Основной стиль */
+* {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #2C3E50; /* Темно-синий цвет текста */
+    background-color: #EAF2F8; /* Светло-голубой фон */
+    border: none;
+}
+QWidget#ToggleButton {
+    background-color: #3498DB;
+    border-radius: 5px;
+}
+/* Кнопки */
+QPushButton {
+    background-color: #3498DB; /* Голубой цвет кнопки */
+    color: white; /* Белый текст */
+    border: 2px solid #2980B9; /* Темная голубая рамка */
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #5DADE2; /* Светло-голубой при наведении */
+    border-color: #3498DB; /* Более яркая рамка */
+}
+QPushButton:pressed {
+    background-color: #2980B9; /* Темный голубой при нажатии */
+}
+
+/* Поля ввода */
+QLineEdit {
+    border: 2px solid #BDC3C7; /* Светло-серая рамка */
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #FFFFFF; /* Белый фон */
+}
+QLineEdit:focus {
+    border: 2px solid #3498DB; /* Голубая рамка при фокусе */
+}
+
+/* Таблицы */
+QTableWidget, QTableView {
+    border: 1px solid #BDC3C7;
+    gridline-color: #D5D8DC;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    selection-background-color: #3498DB;
+    selection-color: white;
+}
+QHeaderView::section {
+    background-color: #3498DB;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    border: 1px solid #D5D8DC;
+}
+
+/* Выпадающие списки */
+QComboBox {
+    border: 2px solid #BDC3C7;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+}
+QComboBox::drop-down {
+    border-left: 1px solid #BDC3C7;
+}
+QComboBox QAbstractItemView {
+    border: 2px solid #3498DB;
+    selection-background-color: #3498DB;
+    selection-color: white;
+}
+
+/* Календарь */
+QCalendarWidget {
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+QCalendarWidget QAbstractItemView {
+    selection-background-color: #3498DB;
+    selection-color: white;
+}
+QCalendarWidget QToolButton {
+    background-color: #3498DB;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 6px;
+}
+QCalendarWidget QToolButton:hover {
+    background-color: #5DADE2;
+}
+QCalendarWidget QToolButton:pressed {
+    background-color: #2980B9;
+}
+QCalendarWidget QHeaderView::section {
+    background-color: #3498DB;
+    color: white;
+}
+
+/* Поля с датой */
+QDateEdit {
+    border: 2px solid #BDC3C7; /* Светло-серая рамка */
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #FFFFFF; /* Белый фон */
+}
+QDateEdit:focus {
+    border: 2px solid #3498DB; /* Голубая рамка при фокусе */
+}
+
+/* QListWidget */
+QListWidget {
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+}
+QListWidget::item {
+    padding: 6px;
+}
+QListWidget::item:hover {
+    background-color: #5DADE2;
+    color: white;
+}
+
+/* Поля с временем */
+QTimeEdit {
+    border: 2px solid #BDC3C7; /* Светло-серая рамка */
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #FFFFFF; /* Белый фон */
+    color: #2C3E50; /* Темно-синий цвет текста */
+}
+QTimeEdit:focus {
+    border: 2px solid #3498DB; /* Голубая рамка при фокусе */
+}
+QTimeEdit::up-button, QTimeEdit::down-button {
+    background-color: #3498DB; /* Голубой фон кнопок */
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+}
+QTimeEdit::up-button:hover, QTimeEdit::down-button:hover {
+    background-color: #5DADE2; /* Светло-голубой фон кнопок при наведении */
+}
+QTimeEdit::up-button:pressed, QTimeEdit::down-button:pressed {
+    background-color: #2980B9; /* Темно-голубой фон кнопок при нажатии */
+}
+QTimeEdit::drop-down {
+    border-left: 1px solid #BDC3C7;
+}
